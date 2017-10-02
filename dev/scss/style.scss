@@ -1,0 +1,65 @@
+$black: #000;
+$white: #FFF;
+$grey: #A9A9A9;
+
+$bachground: #66CCFF;
+$bachground-message: #B2E6FF;
+
+.message{
+	&_container{
+		margin: 0 auto;
+		background-color: #66CCFF;
+		width: 285px;
+		height: 356px;
+		padding: 15px;
+		font-size: 14px;
+		color: $black;
+		overflow-y: auto; 
+	}
+
+	&_addition{		
+		&__wrapper{
+			box-sizing: border-box;
+		}
+
+		&__input, &__button{
+			padding: 0;
+			border: 0;
+			line-height: 30px;
+			border-radius: 2px;
+		}
+
+		&__input{
+			width: 200px;
+			padding-left: 10px;
+		}
+
+		&__button{
+			width: 50px;
+    		float: right;
+			text-transform: lowercase;
+			background-color: #0066FF;
+			color: $white;
+
+			&:hover{
+				cursor: pointer;
+				background-color: #467ed4;
+			}
+		}
+	}
+
+	&_list{
+		&__wrapper{
+			list-style-type: none;
+    		padding: 0;
+		}
+
+		&__item{
+			background: $bachground-message;
+			padding: 15px;
+			border-radius: 5px;
+			margin-top: 15px;
+			word-wrap: break-word;
+		}
+	}
+}
